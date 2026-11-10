@@ -13,7 +13,8 @@ TABLA = "Pedidos"
 def supabase_request(endpoint, method="GET", data=None, query_params=""):
   base = SUPABASE_URL.rstrip("/")
   ep = endpoint.strip("/")
-  url = f"{base}/rest/v1/{ep}"
+  # Usamos directamente la base y le sumamos la tabla o endpoint de forma limpia
+  url = f"{base}/{ep}"
   if query_params:
     url += f"?{query_params}"
 
