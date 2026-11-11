@@ -7,7 +7,7 @@ import streamlit as st
 # ==================== CONFIGURACIÓN DE SUPABASE ====================
 SUPABASE_URL = "https://nqkkawskxppmoiehaacq.supabase.co/rest/v1"
 SUPABASE_KEY = "sb_publishable_AzY_OP50_vaXL30PrleYrA_ePmmH_Bv"
-TABLA = "Pedidos"
+TABLA = "pedidos"
 
 def supabase_request(endpoint, method="GET", data=None, query_params=""):
   base = SUPABASE_URL.rstrip("/")
